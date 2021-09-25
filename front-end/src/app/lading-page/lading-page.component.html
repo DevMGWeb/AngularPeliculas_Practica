@@ -1,0 +1,22 @@
+<!-- <app-rating (rated)="manejarRated($event)"></app-rating> -->
+<!-- <div>
+    <input type="text" (input)="asignarTitulo($event)" />
+</div>
+<div>
+    <input type="checkbox" checked (change)="ocultar = !ocultar"> Ocultar
+</div>
+<app-ciclo-de-vida *ngIf="ocultar" [titulo]="title"></app-ciclo-de-vida> -->
+
+<h2>En Cines</h2>
+<app-listado-peliculas 
+(borrado)="borrado()"
+[peliculas]="peliculasEnCines"></app-listado-peliculas>
+
+<h2>Futuros Estrenos</h2>
+<app-listado-peliculas
+(borrado)="borrado()"
+[peliculas]="peliculasProximosEstrenos"></app-listado-peliculas>
+
+<!--
+<input type="file" style="display:none" #cargador>
+<button (click)="cargador.click()">Cargar Archivo</button> -->

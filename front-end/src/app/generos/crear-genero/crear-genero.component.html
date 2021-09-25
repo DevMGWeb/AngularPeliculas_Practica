@@ -1,0 +1,5 @@
+<!-- <button mat-flat-button color="primary" type="button" (click)="guardarCambios()">Guardar Cambios</button> -->
+<h2>Crear Género</h2>
+<app-formulario-genero 
+[errores] = "errores"
+(onSubmit)="guardarCambios($event)"></app-formulario-genero>
